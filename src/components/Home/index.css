@@ -1,0 +1,36 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;  
+}
+.blurry-background {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/77d35039-751f-4c3e-9c8d-1240c1ca6188/cf244808-d722-428f-80a9-052acdf158ec/IN-en-20231106-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    opacity: 0.8;
+    filter: blur(6px); /* Adjust the blur intensity as needed */
+    z-index: 1; /* Make sure it's behind the subcontainer */
+  }
+.home-sub-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* padding-top: 10%; */
+    z-index: 2;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+}
+
